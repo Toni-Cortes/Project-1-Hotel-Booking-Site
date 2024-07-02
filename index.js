@@ -240,3 +240,4 @@ appendRooms(selectedRooms)
 addEventListener("DOMContentLoaded", (event) => {filtering()});
 locations.addEventListener("input", filtering);
 people.addEventListener("input", filtering);
+

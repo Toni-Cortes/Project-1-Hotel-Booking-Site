@@ -52,7 +52,7 @@ div#hotelIcon img{
     padding: 0;  
 }
 
-#contactBtn, .checkingBtn{
+#contactBtn, .checkingBtn, .continueBtn{
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
@@ -64,7 +64,7 @@ div#hotelIcon img{
 
 }
 
-#contactBtn:hover, .checkingBtn:hover{
+#contactBtn:hover, .checkingBtn:hover, .continueBtn:hover{
     background-color: #f7c14e;
     
 
@@ -89,7 +89,7 @@ div#hotelIcon img{
     cursor: pointer;
 } */
 
-#logBtn:hover, #signBtn:hover {
+#logBtn:hover, #signBtn:hover{
     background-color: #d18c00;
 }
 
@@ -168,7 +168,19 @@ div#hotelIcon img{
 .room{
     background-color: white;
     display: flex;
-    flex-wrap: ;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    padding: 1rem 1rem;  
+    max-width: 1200px;
+    min-width: 670px;
+    border-radius: 5px;
+    
+}
+
+.selectedRoom{
+    background-color: white;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px auto;
@@ -227,6 +239,70 @@ div#hotelIcon img{
 }
 
 
+.checkingBtn{
+    display: none;
+    margin: 50px auto; 
+    font-size: 1.5rem;
+    
+}
+
+.continueBtn{
+    font-size: 1.5rem;
+    
+}
+.nextLink {
+    text-decoration: none;
+}
+
+.user-information{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+
+}
+
+.user-information label {
+    font-weight: 600; 
+}
+
+.payment-methods label {
+    font-weight: 400; 
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.payment-methods input{
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+
+}
+
+#address, #name {
+    border: 1px #eec77a solid;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding: 4px;
+    width: 50%;
+    
+}
+
+ #roomCheck{
+    display: flex;
+    flex-direction: column;
+ }
+
+ 
 
 @media (max-width: 768px) {
     nav {
@@ -253,9 +329,3 @@ div#hotelIcon img{
     }
 }
 
-.checkingBtn{
-    display: none;
-    margin: 50px auto; 
-    font-size: 1.5rem;
-    
-}
