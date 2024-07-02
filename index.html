@@ -29,11 +29,15 @@
     </nav>
 
     <section id="finder">
+
         <div class="search-field" id="location">
             <label for="locations">Location</label>
             <select name="locations" id="locations">
+
+                <option value="all">All Hotels</option>
                 <option value="granada">Toni Hotels GRANADA</option>
                 <option value="bilbao">Toni Hotels BILBAO</option>
+                
             </select>
         </div>
 
@@ -48,11 +52,40 @@
             </div>
         </div>
 
-        <div class="search-field" id="people">
+        <div class="search-field" id="numberOfPeople">
             <label for="people"> <img src="./images/profile.png" alt=""> </label>
             <input type="number" id="people" name="people" min="1" max="3">
         </div>
     </section>
+
+
+
+    <section id="rooms">
+
+        <!-- <div class="room">
+
+            <div class="room-img"><img src="./images/rooms/granada/1-granada.png" alt="room-image" class="room-image">
+            </div>
+            <div class="info">
+                <h1 class="room-name">Name of the room</h1>
+                <div class="characteristics">
+                    <div class="room-people"><img src="./images/icons8-person-30.png" alt="person-icon"><span
+                            class="number-people">2</span></div>
+                    <div class="room-bed"><img src="./images/icons8-sleeping-in-bed-30.png" alt="bed-icon"><span
+                            class="bed-type">Simple</span></div>
+                    <div class="room-bathroom"><img src="./images/icons8-bathroom-30.png" alt="bathroom-icon"><span
+                            class="bathrooom-type">Private</span></div>
+                </div>
+                <p class="room-description">Bonita y acogedora habitacion para <br> amigos discretos. </p>
+            </div>
+            <div class="room-price"><h3 class="room-price">170€</h3> </div>
+        </div> -->
+
+    </section>
+
+    <button class="checkingBtn">Check Out</button>
+
+<script src="./index.js"></script>
 </body>
 
 </html>

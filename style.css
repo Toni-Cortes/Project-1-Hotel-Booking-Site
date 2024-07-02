@@ -52,7 +52,7 @@ div#hotelIcon img{
     padding: 0;  
 }
 
-#contactBtn{
+#contactBtn, .checkingBtn{
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
@@ -64,7 +64,7 @@ div#hotelIcon img{
 
 }
 
-#contactBtn:hover{
+#contactBtn:hover, .checkingBtn:hover{
     background-color: #f7c14e;
     
 
@@ -134,11 +134,25 @@ div#hotelIcon img{
     flex: 1;
 }
 
-#people img {
-    object-fit: contain;
-    height: 14px;
-    margin: auto;
+#people{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 14px; 
+}
 
+
+#numberOfPeople img {
+    object-fit: contain;
+    height: 15px;
+    justify-content: center;
+
+}
+
+#people label {
+    width: 100%;
+    justify-content: center;
+    display: flex;
 }
 
 #people input{
@@ -146,6 +160,71 @@ div#hotelIcon img{
 }
 
 
+#rooms{
+    display: flex;
+    flex-direction: column;
+}
+
+.room{
+    background-color: white;
+    display: flex;
+    flex-wrap: ;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    padding: 1rem 1rem;  
+    max-width: 1200px;
+    min-width: 670px;
+    border-radius: 5px;
+    
+}
+
+.room:hover{
+    background-color: rgb(255, 246, 226);
+}
+
+.characteristics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.room-image{
+    height: 150px;
+    border-radius: 6px; 
+
+     
+}
+
+.characteristics img {
+    margin-right: 5px;
+    height: 20px;
+
+}
+
+.room-people, .room-bed, .room-bathroom {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-right: 40px;
+}
+
+.info{
+    flex-grow: 2;
+    margin-left: 4%;
+    
+}
+
+.room-price{
+    min-width: 90px; 
+    flex-grow: 1;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: end;
+
+}
 
 
 
@@ -172,4 +251,11 @@ div#hotelIcon img{
     .search-field {
         min-width: 100%;
     }
+}
+
+.checkingBtn{
+    display: none;
+    margin: 50px auto; 
+    font-size: 1.5rem;
+    
 }
