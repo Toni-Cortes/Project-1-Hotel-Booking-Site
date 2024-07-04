@@ -424,7 +424,7 @@ div#hotelIcon img {
         align-items: center;
         justify-content: center;
         margin: auto;
-    
+        min-width: 0px;
         margin-bottom: 30px;
     }
 
