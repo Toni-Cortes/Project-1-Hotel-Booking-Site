@@ -439,22 +439,24 @@ div#hotelIcon img {
 
     .room,
     .selectedRoom {
+        display: flex;
         flex-direction: column;
       
         align-items: center;
         justify-content: center;
         text-align: center;
-        min-width: 100%;
-    
-      
+        
+        min-width: 0px;
+        width: 99%;
         padding: 30px 5px 5px 0px; 
     }
 
     #rooms { 
         display: flex;
         flex-direction: column;
+        min-width: 0px;  
     
-        width: 100%;
+        
         
         
     }
@@ -465,7 +467,7 @@ div#hotelIcon img {
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 100%;
+        
         margin: 10px 10px;  
     }
 
@@ -476,8 +478,16 @@ div#hotelIcon img {
     }
 
     .info {
-        margin-left: 0;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1; 
+        
+
+    }
+
+    .room-name{
+        text-align: center;
     }
 
     .room-price {
@@ -487,8 +497,9 @@ div#hotelIcon img {
 
     .characteristics {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        width: 100%;
+        
     }
 
     .summary>p {
@@ -498,5 +509,14 @@ div#hotelIcon img {
 
     .summary{
         margin-bottom: 20px;
+    }
+
+    .room-price h3{
+        text-align: center;
+    }
+
+    .room-price{
+        display: flex;
+        justify-content: center;
     }
 }
