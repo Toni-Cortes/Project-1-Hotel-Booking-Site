@@ -461,17 +461,26 @@ div#hotelIcon img {
         
     }
 
-    .payment-methods, .payment-methods label, .payment-methods input{
+     .payment-methods {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
         
-        margin: 10px 10px;  
+      
     }
 
+    .payment-methods input, .payment-methods label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px auto;
+    }
 
+    .nextLink{
+        margin-top: 30px;  
+    } 
     .room-image {
         width: 100%;
         height: auto;
@@ -481,7 +490,9 @@ div#hotelIcon img {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         flex-grow: 1; 
+        margin: auto;
         
 
     }
@@ -496,7 +507,16 @@ div#hotelIcon img {
     }
 
     .characteristics {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .characteristics div {
+        margin: auto;
+        display: flex;
         justify-content: center;
         align-items: center;
         
