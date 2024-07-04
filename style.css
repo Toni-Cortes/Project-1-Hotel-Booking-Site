@@ -374,6 +374,9 @@ div#hotelIcon img {
         align-items: center;
     }
 
+    #contactBtn{
+        margin-top: 10px;
+    }
     nav {
         
         flex-direction: column;
@@ -421,7 +424,7 @@ div#hotelIcon img {
         align-items: center;
         justify-content: center;
         margin: auto;
-        width: 100%;
+    
         margin-bottom: 30px;
     }
 
