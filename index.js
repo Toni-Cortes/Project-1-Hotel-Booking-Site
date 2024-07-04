@@ -241,3 +241,42 @@ addEventListener("DOMContentLoaded", (event) => {filtering()});
 locations.addEventListener("input", filtering);
 people.addEventListener("input", filtering);
 
+
+
+let dateFromInput = document.getElementById('dateFrom');
+let dateToInput = document.getElementById('dateTo');
+
+// -----code from stackoverflow https://stackoverflow.com/questions/46266352/how-to-add-days-in-input-type-date 
+function addOneDay(dateString) {
+    // Parse the date string into a Date object
+    let date = new Date(dateString);
+    // Add one day
+    date.setDate(date.getDate() + 1);
+    // Convert back to string in format YYYY-MM-DD
+    let newDateString = date.toISOString().split('T')[0];
+    return newDateString;
+}
+// -------------------------------------------------
+    dateFromInput.addEventListener('input', function() {
+
+        dateFromInput.value = document.getElementById('dateFrom').value;
+        dateToInput = document.getElementById('dateTo');
+        // console.log(dateFromInput)
+        // console.log(dateFromInput.value);
+
+        if (dateToInput.value <= dateFromInput.value) {
+            dateToInput.value = addOneDay(dateFromInput.value);
+        }
+       
+    });
+
+    dateToInput.addEventListener('input', function() {
+        dateFromInput.value = document.getElementById('dateFrom').value;
+        dateToInput = document.getElementById('dateTo');
+        // console.log(dateFromInput)
+        // console.log(dateFromInput.value);
+
+        if (dateToInput.value <= dateFromInput.value) {
+            dateToInput.value = addOneDay(dateFromInput.value);
+        }
+    });
